@@ -21,6 +21,7 @@
 		E210E6F31DD80A54000BA73C /* js in Resources */ = {isa = PBXBuildFile; fileRef = E210E6F21DD80A54000BA73C /* js */; };
 		E210E6F81DD80D0E000BA73C /* WXImageLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6F51DD80D0E000BA73C /* WXImageLoadManager.m */; };
 		E210E6F91DD80D0E000BA73C /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6F71DD80D0E000BA73C /* WXEventModule.m */; };
+		E210E6FC1DD86CA6000BA73C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6FB1DD86CA6000BA73C /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		E210E6F51DD80D0E000BA73C /* WXImageLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImageLoadManager.m; sourceTree = "<group>"; };
 		E210E6F61DD80D0E000BA73C /* WXEventModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXEventModule.h; sourceTree = "<group>"; };
 		E210E6F71DD80D0E000BA73C /* WXEventModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXEventModule.m; sourceTree = "<group>"; };
+		E210E6FA1DD86CA6000BA73C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		E210E6FB1DD86CA6000BA73C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 		E210E6E21DD7FC63000BA73C /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				E210E6FA1DD86CA6000BA73C /* MapViewController.h */,
+				E210E6FB1DD86CA6000BA73C /* MapViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				E210E6F81DD80D0E000BA73C /* WXImageLoadManager.m in Sources */,
 				E210E6F11DD8005F000BA73C /* WeexTabbarController.m in Sources */,
 				E210E6F91DD80D0E000BA73C /* WXEventModule.m in Sources */,
+				E210E6FC1DD86CA6000BA73C /* MapViewController.m in Sources */,
 				E210E6EE1DD80032000BA73C /* SPTabbarController.m in Sources */,
 				E210E6CC1DD76270000BA73C /* main.m in Sources */,
 			);

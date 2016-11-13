@@ -24,7 +24,7 @@
     [self initWeex];
     
     WeexTabbarController *tab = [[WeexTabbarController alloc] init];
-    tab.items = @[@{@"img":@"tabbar_item1",@"simg":@"",@"title":@"发现",@"jspath":@"find.js"},@{@"img":@"tabbar_item2",@"simg":@"",@"title":@"乐善地图",@"jspath":@"map.js"},@{@"img":@"tabbar_item3",@"simg":@"",@"title":@"我的",@"jspath":@"my.js"}];
+    tab.items = @[@{@"img":@"tabbar_item1",@"simg":@"",@"title":@"发现",@"jspath":@"find.js"},@{@"img":@"tabbar_item2",@"simg":@"",@"title":@"乐善地图",@"jspath":@"MapViewController"},@{@"img":@"tabbar_item3",@"simg":@"",@"title":@"我的",@"jspath":@"my.js"}];
     self.window.rootViewController = tab;
     
     return YES;

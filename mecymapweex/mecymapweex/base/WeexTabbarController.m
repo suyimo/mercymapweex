@@ -24,15 +24,24 @@
     _items = items;
     NSMutableArray *barItemVCs = [NSMutableArray arrayWithCapacity:0];
     for (NSDictionary *item in self.items) {
+        SPBaseViewController *vc = nil;
+        
         UITabBarItem *barItem = [[UITabBarItem alloc] init];
         barItem.image = [UIImage imageNamed:[item objectForKey:@"img"]];
         barItem.selectedImage = [UIImage imageNamed:[item objectForKey:@"simg"]];
         barItem.title = [item objectForKey:@"title"];
-        WeexViewController *vc = [[WeexViewController alloc] init];
-        NSString *path=[NSString stringWithFormat:@"file://%@/js/%@",[NSBundle mainBundle].bundlePath,[item objectForKey:@"jspath"]];
-        vc.jsPath = path;
+        if ([[item objectForKey:@"jspath"] rangeOfString:@".js"].length > 0) {
+            WeexViewController *wvc = [[WeexViewController alloc] init];
+            NSString *path=[NSString stringWithFormat:@"file://%@/js/%@",[NSBundle mainBundle].bundlePath,[item objectForKey:@"jspath"]];
+            wvc.jsPath = path;
+            
+            wvc.decreaseHeight = 108;
+            vc = wvc;
+        } else {
+            vc = [[NSClassFromString([item objectForKey:@"jspath"]) alloc] init];
+            
+        }
         vc.tabBarItem = barItem;
-        vc.decreaseHeight = 108;
         [barItemVCs addObject:vc];
     }
     self.viewControllers = barItemVCs;
