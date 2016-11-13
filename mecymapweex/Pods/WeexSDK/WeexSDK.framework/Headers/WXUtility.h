@@ -116,7 +116,7 @@ extern _Nonnull SEL WXSwizzledSelectorForSelector(_Nonnull SEL selector);
 /**
  * @abstract JSON Decode Mehthod
  *
- * @param JSON String.
+ * @param json String.
  *
  * @return A json object by decoding json string.
  *
@@ -128,7 +128,7 @@ extern _Nonnull SEL WXSwizzledSelectorForSelector(_Nonnull SEL selector);
 /**
  * @abstract JSON Encode Mehthod
  *
- * @param JSON Object.
+ * @param object Object.
  *
  * @return A json string by encoding json object.
  *
@@ -152,7 +152,7 @@ extern _Nonnull SEL WXSwizzledSelectorForSelector(_Nonnull SEL selector);
 /**
  * @abstract JSON Object Copy Mehthod
  *
- * @param JSON Object.
+ * @param object Object.
  *
  * @return A json object by copying.
  *
@@ -180,9 +180,9 @@ extern _Nonnull SEL WXSwizzledSelectorForSelector(_Nonnull SEL selector);
 /**
  * @abstract Returns a standard error object
  *
- * @param error code.
+ *   code.
  *
- * @param error message.
+ *  e message.
  *
  * @return A error object type of NSError.
  *
@@ -192,13 +192,13 @@ extern _Nonnull SEL WXSwizzledSelectorForSelector(_Nonnull SEL selector);
 /**
  * @abstract Returns a Font Object by setting some properties such as size、weight、style and fontFamily.
  *
- * @param textSize.
+ *  textSize.
  *
- * @param textWeight. The type of WXTextWeight (Normal or Bold).
+ *  textWeight. The type of WXTextWeight (Normal or Bold).
  *
- * @param textStyle. The type of WXTextStyle (Normal or Italic).
+ *  textStyle. The type of WXTextStyle (Normal or Italic).
  *
- * @param fontFamily.
+ *  fontFamily.
  *
  * @return A font object according to the above params.
  *

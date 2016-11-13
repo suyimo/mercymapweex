@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "WeexTabbarController.h"
+#import <WeexSDK/WeexSDK.h>
+#import "WXImageLoadManager.h"
+#import "WXEventModule.h"
 @interface AppDelegate ()
 
 @end
@@ -17,9 +20,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self initWeex];
+    
+    WeexTabbarController *tab = [[WeexTabbarController alloc] init];
+    tab.items = @[@{@"img":@"tabbar_item1",@"simg":@"",@"title":@"发现",@"jspath":@"find.js"},@{@"img":@"tabbar_item2",@"simg":@"",@"title":@"乐善地图",@"jspath":@"map.js"},@{@"img":@"tabbar_item3",@"simg":@"",@"title":@"我的",@"jspath":@"my.js"}];
+    self.window.rootViewController = tab;
+    
     return YES;
 }
-
+- (void)initWeex {
+    [WXAppConfiguration setAppGroup:@"tuyu"];
+    [WXAppConfiguration setAppName:@"licai"];
+    [WXAppConfiguration setAppVersion:@"1.0.0"];
+    
+    [WXSDKEngine initSDKEnviroment];
+    
+    [WXSDKEngine registerHandler:[WXImageLoadManager new] withProtocol:@protocol(WXImgLoaderProtocol)];
+    [WXSDKEngine registerHandler:[WXEventModule new] withProtocol:@protocol(WXEventModuleProtocol)];
+    
+    
+    
+    [WXSDKEngine registerComponent:@"select" withClass:NSClassFromString(@"WXSelectComponent")];
+    [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
+    //    [WXSDKEngine registerComponent:@"select" withClass:NSClassFromString(@"WXSelectComponent")];
+    //    [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

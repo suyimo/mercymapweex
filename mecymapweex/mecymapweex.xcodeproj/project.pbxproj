@@ -1,780 +1,474 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>03B9635835D95B204CE96751</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-mecymapweex.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-mecymapweex/Pods-mecymapweex.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2199281C0D385B08D1F26812</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>98998F1926BBAE9DF1559E4B</string>
-				<string>03B9635835D95B204CE96751</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>239A55163CD2E2E17BF97C16</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-mecymapweex.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>345D7CECBCF7E23946E8599C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>239A55163CD2E2E17BF97C16</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>38745FA1C05396595C21B950</key>
-		<dict>
-			<key>fileRef</key>
-			<string>239A55163CD2E2E17BF97C16</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>97DBE0CB3BE9E3DEB64AC65B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-mecymapweex/Pods-mecymapweex-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>98998F1926BBAE9DF1559E4B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-mecymapweex.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-mecymapweex/Pods-mecymapweex.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BEFB2E1D86BB5F3881803F91</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E210E6BE1DD76270000BA73C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E210E6C91DD76270000BA73C</string>
-				<string>E210E6C81DD76270000BA73C</string>
-				<string>2199281C0D385B08D1F26812</string>
-				<string>345D7CECBCF7E23946E8599C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6BF1DD76270000BA73C</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0800</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>sym</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E210E6C61DD76270000BA73C</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E210E6C21DD76270000BA73C</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E210E6BE1DD76270000BA73C</string>
-			<key>productRefGroup</key>
-			<string>E210E6C81DD76270000BA73C</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E210E6C61DD76270000BA73C</string>
-			</array>
-		</dict>
-		<key>E210E6C21DD76270000BA73C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E210E6DC1DD76270000BA73C</string>
-				<string>E210E6DD1DD76270000BA73C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E210E6C31DD76270000BA73C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E210E6D21DD76270000BA73C</string>
-				<string>E210E6CF1DD76270000BA73C</string>
-				<string>E210E6CC1DD76270000BA73C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E210E6C41DD76270000BA73C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>38745FA1C05396595C21B950</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E210E6C51DD76270000BA73C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E210E6DA1DD76270000BA73C</string>
-				<string>E210E6D71DD76270000BA73C</string>
-				<string>E210E6D51DD76270000BA73C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E210E6C61DD76270000BA73C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E210E6DE1DD76270000BA73C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BEFB2E1D86BB5F3881803F91</string>
-				<string>E210E6C31DD76270000BA73C</string>
-				<string>E210E6C41DD76270000BA73C</string>
-				<string>E210E6C51DD76270000BA73C</string>
-				<string>97DBE0CB3BE9E3DEB64AC65B</string>
-				<string>FEA19750F16C135FD0B41997</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>mecymapweex</string>
-			<key>productName</key>
-			<string>mecymapweex</string>
-			<key>productReference</key>
-			<string>E210E6C71DD76270000BA73C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>E210E6C71DD76270000BA73C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>mecymapweex.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E210E6C81DD76270000BA73C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E210E6C71DD76270000BA73C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6C91DD76270000BA73C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E210E6CD1DD76270000BA73C</string>
-				<string>E210E6CE1DD76270000BA73C</string>
-				<string>E210E6D01DD76270000BA73C</string>
-				<string>E210E6D11DD76270000BA73C</string>
-				<string>E210E6D31DD76270000BA73C</string>
-				<string>E210E6D61DD76270000BA73C</string>
-				<string>E210E6D81DD76270000BA73C</string>
-				<string>E210E6DB1DD76270000BA73C</string>
-				<string>E210E6CA1DD76270000BA73C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>mecymapweex</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6CA1DD76270000BA73C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E210E6CB1DD76270000BA73C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6CB1DD76270000BA73C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6CC1DD76270000BA73C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E210E6CB1DD76270000BA73C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E210E6CD1DD76270000BA73C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6CE1DD76270000BA73C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6CF1DD76270000BA73C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E210E6CE1DD76270000BA73C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E210E6D01DD76270000BA73C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6D11DD76270000BA73C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6D21DD76270000BA73C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E210E6D11DD76270000BA73C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E210E6D31DD76270000BA73C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E210E6D41DD76270000BA73C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6D41DD76270000BA73C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6D51DD76270000BA73C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E210E6D31DD76270000BA73C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E210E6D61DD76270000BA73C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6D71DD76270000BA73C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E210E6D61DD76270000BA73C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E210E6D81DD76270000BA73C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E210E6D91DD76270000BA73C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6D91DD76270000BA73C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6DA1DD76270000BA73C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E210E6D81DD76270000BA73C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E210E6DB1DD76270000BA73C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E210E6DC1DD76270000BA73C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E210E6DD1DD76270000BA73C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E210E6DE1DD76270000BA73C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E210E6DF1DD76270000BA73C</string>
-				<string>E210E6E01DD76270000BA73C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E210E6DF1DD76270000BA73C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>98998F1926BBAE9DF1559E4B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>mecymapweex/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>sym.mecymapweex</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E210E6E01DD76270000BA73C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>03B9635835D95B204CE96751</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>mecymapweex/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>sym.mecymapweex</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FEA19750F16C135FD0B41997</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-mecymapweex/Pods-mecymapweex-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E210E6BF1DD76270000BA73C</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38745FA1C05396595C21B950 /* libPods-mecymapweex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 239A55163CD2E2E17BF97C16 /* libPods-mecymapweex.a */; };
+		E210E6CC1DD76270000BA73C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6CB1DD76270000BA73C /* main.m */; };
+		E210E6CF1DD76270000BA73C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6CE1DD76270000BA73C /* AppDelegate.m */; };
+		E210E6D21DD76270000BA73C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6D11DD76270000BA73C /* ViewController.m */; };
+		E210E6D51DD76270000BA73C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E210E6D31DD76270000BA73C /* Main.storyboard */; };
+		E210E6D71DD76270000BA73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E210E6D61DD76270000BA73C /* Assets.xcassets */; };
+		E210E6DA1DD76270000BA73C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E210E6D81DD76270000BA73C /* LaunchScreen.storyboard */; };
+		E210E6E81DD7FCC2000BA73C /* SPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6E71DD7FCC2000BA73C /* SPBaseViewController.m */; };
+		E210E6EB1DD7FCE5000BA73C /* WeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6EA1DD7FCE5000BA73C /* WeexViewController.m */; };
+		E210E6EE1DD80032000BA73C /* SPTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6ED1DD80032000BA73C /* SPTabbarController.m */; };
+		E210E6F11DD8005F000BA73C /* WeexTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6F01DD8005F000BA73C /* WeexTabbarController.m */; };
+		E210E6F31DD80A54000BA73C /* js in Resources */ = {isa = PBXBuildFile; fileRef = E210E6F21DD80A54000BA73C /* js */; };
+		E210E6F81DD80D0E000BA73C /* WXImageLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6F51DD80D0E000BA73C /* WXImageLoadManager.m */; };
+		E210E6F91DD80D0E000BA73C /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E210E6F71DD80D0E000BA73C /* WXEventModule.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03B9635835D95B204CE96751 /* Pods-mecymapweex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mecymapweex.release.xcconfig"; path = "Pods/Target Support Files/Pods-mecymapweex/Pods-mecymapweex.release.xcconfig"; sourceTree = "<group>"; };
+		239A55163CD2E2E17BF97C16 /* libPods-mecymapweex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mecymapweex.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98998F1926BBAE9DF1559E4B /* Pods-mecymapweex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mecymapweex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mecymapweex/Pods-mecymapweex.debug.xcconfig"; sourceTree = "<group>"; };
+		E210E6C71DD76270000BA73C /* mecymapweex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mecymapweex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E210E6CB1DD76270000BA73C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E210E6CD1DD76270000BA73C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E210E6CE1DD76270000BA73C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E210E6D01DD76270000BA73C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E210E6D11DD76270000BA73C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E210E6D41DD76270000BA73C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E210E6D61DD76270000BA73C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E210E6D91DD76270000BA73C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E210E6DB1DD76270000BA73C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E210E6E61DD7FCC2000BA73C /* SPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseViewController.h; sourceTree = "<group>"; };
+		E210E6E71DD7FCC2000BA73C /* SPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseViewController.m; sourceTree = "<group>"; };
+		E210E6E91DD7FCE5000BA73C /* WeexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexViewController.h; sourceTree = "<group>"; };
+		E210E6EA1DD7FCE5000BA73C /* WeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexViewController.m; sourceTree = "<group>"; };
+		E210E6EC1DD80032000BA73C /* SPTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTabbarController.h; sourceTree = "<group>"; };
+		E210E6ED1DD80032000BA73C /* SPTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTabbarController.m; sourceTree = "<group>"; };
+		E210E6EF1DD8005F000BA73C /* WeexTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexTabbarController.h; sourceTree = "<group>"; };
+		E210E6F01DD8005F000BA73C /* WeexTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexTabbarController.m; sourceTree = "<group>"; };
+		E210E6F21DD80A54000BA73C /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = weex/js; sourceTree = SOURCE_ROOT; };
+		E210E6F41DD80D0E000BA73C /* WXImageLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImageLoadManager.h; sourceTree = "<group>"; };
+		E210E6F51DD80D0E000BA73C /* WXImageLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImageLoadManager.m; sourceTree = "<group>"; };
+		E210E6F61DD80D0E000BA73C /* WXEventModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXEventModule.h; sourceTree = "<group>"; };
+		E210E6F71DD80D0E000BA73C /* WXEventModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXEventModule.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E210E6C41DD76270000BA73C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38745FA1C05396595C21B950 /* libPods-mecymapweex.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2199281C0D385B08D1F26812 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98998F1926BBAE9DF1559E4B /* Pods-mecymapweex.debug.xcconfig */,
+				03B9635835D95B204CE96751 /* Pods-mecymapweex.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		345D7CECBCF7E23946E8599C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				239A55163CD2E2E17BF97C16 /* libPods-mecymapweex.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E210E6BE1DD76270000BA73C = {
+			isa = PBXGroup;
+			children = (
+				E210E6C91DD76270000BA73C /* mecymapweex */,
+				E210E6C81DD76270000BA73C /* Products */,
+				2199281C0D385B08D1F26812 /* Pods */,
+				345D7CECBCF7E23946E8599C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E210E6C81DD76270000BA73C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E210E6C71DD76270000BA73C /* mecymapweex.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E210E6C91DD76270000BA73C /* mecymapweex */ = {
+			isa = PBXGroup;
+			children = (
+				E210E6F21DD80A54000BA73C /* js */,
+				E210E6E51DD7FC8D000BA73C /* base */,
+				E210E6E11DD7FC62000BA73C /* customview */,
+				E210E6E21DD7FC63000BA73C /* controller */,
+				E210E6E31DD7FC63000BA73C /* third */,
+				E210E6E41DD7FC63000BA73C /* util */,
+				E210E6CD1DD76270000BA73C /* AppDelegate.h */,
+				E210E6CE1DD76270000BA73C /* AppDelegate.m */,
+				E210E6D01DD76270000BA73C /* ViewController.h */,
+				E210E6D11DD76270000BA73C /* ViewController.m */,
+				E210E6D31DD76270000BA73C /* Main.storyboard */,
+				E210E6D61DD76270000BA73C /* Assets.xcassets */,
+				E210E6D81DD76270000BA73C /* LaunchScreen.storyboard */,
+				E210E6DB1DD76270000BA73C /* Info.plist */,
+				E210E6CA1DD76270000BA73C /* Supporting Files */,
+			);
+			path = mecymapweex;
+			sourceTree = "<group>";
+		};
+		E210E6CA1DD76270000BA73C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E210E6CB1DD76270000BA73C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E210E6E11DD7FC62000BA73C /* customview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = customview;
+			sourceTree = "<group>";
+		};
+		E210E6E21DD7FC63000BA73C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E210E6E31DD7FC63000BA73C /* third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = third;
+			sourceTree = "<group>";
+		};
+		E210E6E41DD7FC63000BA73C /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E210E6F41DD80D0E000BA73C /* WXImageLoadManager.h */,
+				E210E6F51DD80D0E000BA73C /* WXImageLoadManager.m */,
+				E210E6F61DD80D0E000BA73C /* WXEventModule.h */,
+				E210E6F71DD80D0E000BA73C /* WXEventModule.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		E210E6E51DD7FC8D000BA73C /* base */ = {
+			isa = PBXGroup;
+			children = (
+				E210E6E61DD7FCC2000BA73C /* SPBaseViewController.h */,
+				E210E6E71DD7FCC2000BA73C /* SPBaseViewController.m */,
+				E210E6E91DD7FCE5000BA73C /* WeexViewController.h */,
+				E210E6EA1DD7FCE5000BA73C /* WeexViewController.m */,
+				E210E6EC1DD80032000BA73C /* SPTabbarController.h */,
+				E210E6ED1DD80032000BA73C /* SPTabbarController.m */,
+				E210E6EF1DD8005F000BA73C /* WeexTabbarController.h */,
+				E210E6F01DD8005F000BA73C /* WeexTabbarController.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E210E6C61DD76270000BA73C /* mecymapweex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E210E6DE1DD76270000BA73C /* Build configuration list for PBXNativeTarget "mecymapweex" */;
+			buildPhases = (
+				BEFB2E1D86BB5F3881803F91 /* [CP] Check Pods Manifest.lock */,
+				E210E6C31DD76270000BA73C /* Sources */,
+				E210E6C41DD76270000BA73C /* Frameworks */,
+				E210E6C51DD76270000BA73C /* Resources */,
+				97DBE0CB3BE9E3DEB64AC65B /* [CP] Embed Pods Frameworks */,
+				FEA19750F16C135FD0B41997 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mecymapweex;
+			productName = mecymapweex;
+			productReference = E210E6C71DD76270000BA73C /* mecymapweex.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E210E6BF1DD76270000BA73C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = sym;
+				TargetAttributes = {
+					E210E6C61DD76270000BA73C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E210E6C21DD76270000BA73C /* Build configuration list for PBXProject "mecymapweex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E210E6BE1DD76270000BA73C;
+			productRefGroup = E210E6C81DD76270000BA73C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E210E6C61DD76270000BA73C /* mecymapweex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E210E6C51DD76270000BA73C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E210E6DA1DD76270000BA73C /* LaunchScreen.storyboard in Resources */,
+				E210E6D71DD76270000BA73C /* Assets.xcassets in Resources */,
+				E210E6D51DD76270000BA73C /* Main.storyboard in Resources */,
+				E210E6F31DD80A54000BA73C /* js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97DBE0CB3BE9E3DEB64AC65B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mecymapweex/Pods-mecymapweex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFB2E1D86BB5F3881803F91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FEA19750F16C135FD0B41997 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mecymapweex/Pods-mecymapweex-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E210E6C31DD76270000BA73C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E210E6EB1DD7FCE5000BA73C /* WeexViewController.m in Sources */,
+				E210E6D21DD76270000BA73C /* ViewController.m in Sources */,
+				E210E6CF1DD76270000BA73C /* AppDelegate.m in Sources */,
+				E210E6E81DD7FCC2000BA73C /* SPBaseViewController.m in Sources */,
+				E210E6F81DD80D0E000BA73C /* WXImageLoadManager.m in Sources */,
+				E210E6F11DD8005F000BA73C /* WeexTabbarController.m in Sources */,
+				E210E6F91DD80D0E000BA73C /* WXEventModule.m in Sources */,
+				E210E6EE1DD80032000BA73C /* SPTabbarController.m in Sources */,
+				E210E6CC1DD76270000BA73C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E210E6D31DD76270000BA73C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E210E6D41DD76270000BA73C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E210E6D81DD76270000BA73C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E210E6D91DD76270000BA73C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E210E6DC1DD76270000BA73C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E210E6DD1DD76270000BA73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E210E6DF1DD76270000BA73C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98998F1926BBAE9DF1559E4B /* Pods-mecymapweex.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = mecymapweex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sym.mecymapweex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E210E6E01DD76270000BA73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B9635835D95B204CE96751 /* Pods-mecymapweex.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = mecymapweex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sym.mecymapweex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E210E6C21DD76270000BA73C /* Build configuration list for PBXProject "mecymapweex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E210E6DC1DD76270000BA73C /* Debug */,
+				E210E6DD1DD76270000BA73C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E210E6DE1DD76270000BA73C /* Build configuration list for PBXNativeTarget "mecymapweex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E210E6DF1DD76270000BA73C /* Debug */,
+				E210E6E01DD76270000BA73C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E210E6BF1DD76270000BA73C /* Project object */;
+}
