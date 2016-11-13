@@ -1,7 +1,13 @@
 <template>
   <div>
+    <scroller>
+      <slider auto-play="true" style="width: 750px;height: 400px" onchange="sliderIndex">
+        <image repeat="{{banners}}" src="{{img}}"></image>
+      </slider>
 
-    <text>Hello Weex!</text>
+
+      <text>{{text}}</text>
+    </scroller>
   </div>
 </template>
 
@@ -12,8 +18,15 @@
 <script>
   module.exports = {
     data: {
+      banners:[{img:'local://tabbar_item1'},{img:'local://tabbar_item2'},{img:'local://tabbar_item3'}],
+      text:'hell0 weex',
       ctHeight: 800,
       img: '//gw.alicdn.com/tps/i2/TB1DpsmMpXXXXabaXXX20ySQVXX-512-512.png_400x400.jpg'
+    },
+    methods:{
+      sliderIndex:function (e) {
+        this.text = this.banners[e.index].img;
+      }
     },
     ready: function () {
       this.ctHeight = this.$getConfig().env.deviceHeight

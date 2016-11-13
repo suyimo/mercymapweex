@@ -48,7 +48,7 @@
 	var __weex_style__ = __webpack_require__(2)
 	var __weex_script__ = __webpack_require__(3)
 
-	__weex_define__('@weex-component/5f0f9f6d9b814c8d365214913a127dcd', [], function(__weex_require__, __weex_exports__, __weex_module__) {
+	__weex_define__('@weex-component/7a8806c10d64e44a762c9167c97089ef', [], function(__weex_require__, __weex_exports__, __weex_module__) {
 
 	    __weex_script__(__weex_module__, __weex_exports__, __weex_require__)
 	    if (__weex_exports__.__esModule && __weex_exports__.default) {
@@ -61,7 +61,7 @@
 
 	})
 
-	__weex_bootstrap__('@weex-component/5f0f9f6d9b814c8d365214913a127dcd',undefined,undefined)
+	__weex_bootstrap__('@weex-component/7a8806c10d64e44a762c9167c97089ef',undefined,undefined)
 
 /***/ },
 /* 1 */
@@ -69,39 +69,34 @@
 
 	module.exports = {
 	  "type": "div",
+	  "classList": [
+	    "ct"
+	  ],
+	  "style": {
+	    "height": function () {return this.ctHeight}
+	  },
 	  "children": [
 	    {
-	      "type": "scroller",
-	      "children": [
-	        {
-	          "type": "slider",
-	          "attr": {
-	            "autoPlay": "true"
-	          },
-	          "style": {
-	            "width": 750,
-	            "height": 400
-	          },
-	          "events": {
-	            "change": "sliderIndex"
-	          },
-	          "children": [
-	            {
-	              "type": "image",
-	              "repeat": function () {return this.banners},
-	              "attr": {
-	                "src": function () {return this.img}
-	              }
-	            }
-	          ]
-	        },
-	        {
-	          "type": "text",
-	          "attr": {
-	            "value": function () {return this.text}
-	          }
-	        }
-	      ]
+	      "type": "image",
+	      "classList": [
+	        "img"
+	      ],
+	      "style": {
+	        "width": 400,
+	        "height": 400
+	      },
+	      "attr": {
+	        "src": function () {return this.img}
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 42
+	      },
+	      "attr": {
+	        "value": "Hello Weex!"
+	      }
 	    }
 	  ]
 	}
@@ -110,7 +105,16 @@
 /* 2 */
 /***/ function(module, exports) {
 
-	module.exports = {}
+	module.exports = {
+	  "ct": {
+	    "width": 750,
+	    "alignItems": "center",
+	    "justifyContent": "center"
+	  },
+	  "img": {
+	    "marginBottom": 20
+	  }
+	}
 
 /***/ },
 /* 3 */
@@ -120,16 +124,9 @@
 
 	module.exports = {
 	  data: function () {return {
-	    banners: [{ img: 'local://tabbar_item1' }, { img: 'local://tabbar_item1' }, { img: 'local://tabbar_item1' }],
-	    text: 'hell0 weex',
 	    ctHeight: 800,
 	    img: '//gw.alicdn.com/tps/i2/TB1DpsmMpXXXXabaXXX20ySQVXX-512-512.png_400x400.jpg'
 	  }},
-	  methods: {
-	    sliderIndex: function sliderIndex(e) {
-	      this.text = this.banners[e.index].img;
-	    }
-	  },
 	  ready: function ready() {
 	    this.ctHeight = this.$getConfig().env.deviceHeight;
 	  }
